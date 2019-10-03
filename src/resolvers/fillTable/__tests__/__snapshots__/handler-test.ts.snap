@@ -1,0 +1,1394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should mock data for the table with passed id according params 1`] = `
+Array [
+  Object {
+    "definitions": Array [
+      Object {
+        "directives": Array [],
+        "kind": "OperationDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "TableSchema",
+        },
+        "operation": "query",
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [
+                Object {
+                  "kind": "Argument",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "id",
+                  },
+                  "value": Object {
+                    "kind": "Variable",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "id",
+                    },
+                  },
+                },
+              ],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "table",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "TableFragment",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "variableDefinitions": Array [
+          Object {
+            "defaultValue": undefined,
+            "directives": Array [],
+            "kind": "VariableDefinition",
+            "type": Object {
+              "kind": "NonNullType",
+              "type": Object {
+                "kind": "NamedType",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "ID",
+                },
+              },
+            },
+            "variable": Object {
+              "kind": "Variable",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+            },
+          },
+        ],
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "TableFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "name",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "fields",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "TableFieldFragment",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "Table",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "TableFieldFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "directives": Array [],
+              "kind": "FragmentSpread",
+              "name": Object {
+                "kind": "Name",
+                "value": "CommonTableFieldFragment",
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "fieldTypeAttributes",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "TextFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "NumberFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "FileFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "DateFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "SwitchFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "SmartFieldTypesAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "MissingRelationFieldTypeAttributes",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "TableField",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "CommonTableFieldFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "name",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "displayName",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "table",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "id",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "name",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "displayName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "description",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "fieldType",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "fieldTypeAttributes",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "TextFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "NumberFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "FileFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "DateFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "SwitchFieldTypeAttributes",
+                    },
+                  },
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "MissingRelationFieldTypeAttributes",
+                    },
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isList",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isRequired",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isUnique",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "defaultValue",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isSystem",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isMeta",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "relation",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refFieldName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refFieldDisplayName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "relationTableName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "relationFieldName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refTable",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "id",
+                          },
+                          "selectionSet": undefined,
+                        },
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "name",
+                          },
+                          "selectionSet": undefined,
+                        },
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "displayName",
+                          },
+                          "selectionSet": undefined,
+                        },
+                      ],
+                    },
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refField",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "id",
+                          },
+                          "selectionSet": undefined,
+                        },
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "name",
+                          },
+                          "selectionSet": undefined,
+                        },
+                        Object {
+                          "alias": undefined,
+                          "arguments": Array [],
+                          "directives": Array [],
+                          "kind": "Field",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "displayName",
+                          },
+                          "selectionSet": undefined,
+                        },
+                      ],
+                    },
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refFieldIsList",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "refFieldIsRequired",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "schemaFeatures",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "update",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "delete",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "dataFeatures",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "create",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "update",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "TableField",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "DateFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "DateFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "TextFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "fieldSize",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "TextFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "NumberFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "precision",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "currency",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "minValue",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "maxValue",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "isBigInt",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "NumberFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "FileFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "maxSize",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "typeRestrictions",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "FileFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "SmartFieldTypesAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "innerFields",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "name",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "displayName",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "description",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "fieldType",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "isList",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "isRequired",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "isUnique",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "fieldTypeAttributes",
+                    },
+                    "selectionSet": Object {
+                      "kind": "SelectionSet",
+                      "selections": Array [
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "TextFieldTypeAttributes",
+                          },
+                        },
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "NumberFieldTypeAttributes",
+                          },
+                        },
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "FileFieldTypeAttributes",
+                          },
+                        },
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "DateFieldTypeAttributes",
+                          },
+                        },
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "SwitchFieldTypeAttributes",
+                          },
+                        },
+                        Object {
+                          "directives": Array [],
+                          "kind": "FragmentSpread",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "MissingRelationFieldTypeAttributes",
+                          },
+                        },
+                      ],
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "SmartFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "SwitchFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "format",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "listOptions",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "SwitchFieldTypeAttributes",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "MissingRelationFieldTypeAttributes",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "missingTable",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "MissingRelationFieldTypeAttributes",
+          },
+        },
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 2577,
+      "start": 0,
+    },
+  },
+  Object {
+    "id": "5d91e2c5654e8ab86af4a570",
+  },
+]
+`;
+
+exports[`Should mock data for the table with passed id according params 2`] = `
+Array [
+  Object {
+    "count": 100,
+    "fields": Array [
+      Object {
+        "format": "%F",
+        "name": "dateField",
+        "type": "Date",
+      },
+      Object {
+        "name": "datetimeField",
+        "type": "Date",
+      },
+      Object {
+        "decimals": 0,
+        "max": 2000,
+        "min": 10,
+        "name": "intField",
+        "type": "Number",
+      },
+      Object {
+        "decimals": 4,
+        "max": null,
+        "min": null,
+        "name": "numberField",
+        "type": "Number",
+      },
+      Object {
+        "name": "switchField",
+        "type": "Boolean",
+      },
+      Object {
+        "format": "******",
+        "name": "text",
+        "type": "Character Sequence",
+      },
+      Object {
+        "name": "customSwitch",
+        "type": "Custom List",
+        "values": Array [
+          "foo",
+          "bar",
+          "buz",
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`Should mock data for the table with passed id according params 3`] = `
+Array [
+  Object {
+    "definitions": Array [
+      Object {
+        "directives": Array [],
+        "kind": "OperationDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "FillTableCreateMany",
+        },
+        "operation": "mutation",
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [
+                Object {
+                  "kind": "Argument",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "data",
+                  },
+                  "value": Object {
+                    "kind": "Variable",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "data",
+                    },
+                  },
+                },
+              ],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "tableNameCreateMany",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "count",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "variableDefinitions": Array [
+          Object {
+            "defaultValue": undefined,
+            "directives": Array [],
+            "kind": "VariableDefinition",
+            "type": Object {
+              "kind": "NonNullType",
+              "type": Object {
+                "kind": "ListType",
+                "type": Object {
+                  "kind": "NamedType",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "TableNameCreateManyInput",
+                  },
+                },
+              },
+            },
+            "variable": Object {
+              "kind": "Variable",
+              "name": Object {
+                "kind": "Name",
+                "value": "data",
+              },
+            },
+          },
+        ],
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 144,
+      "start": 0,
+    },
+  },
+  Object {
+    "data": Array [
+      Object {
+        "foo": "bar",
+      },
+    ],
+  },
+]
+`;
+
+exports[`Should mock data for the table with passed id according params 4`] = `
+Object {
+  "data": Object {
+    "success": true,
+  },
+}
+`;

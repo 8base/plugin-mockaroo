@@ -1,0 +1,7 @@
+functions:
+  fillTable:
+    description: Adds mocked rows to the table with passed ID
+    type: resolver
+    handler:
+      code: src/resolvers/fillTable/handler.ts
+    schema: src/resolvers/fillTable/schema.graphql

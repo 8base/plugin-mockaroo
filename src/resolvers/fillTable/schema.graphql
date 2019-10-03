@@ -1,0 +1,7 @@
+type FillTableMockarooResult {
+  success: Boolean!
+}
+
+extend type Mutation {
+  fillTable(id: ID!, count: Int!): FillTableMockarooResult
+}
