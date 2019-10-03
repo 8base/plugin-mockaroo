@@ -7,10 +7,6 @@ import { translateFields } from './utils';
 
 const { MOCKAROO_API_KEY } = process.env;
 
-const client = new Mockaroo.Client({
-  apiKey: MOCKAROO_API_KEY,
-});
-
 type FillTableMockarooResult = {
   data: {
     success: boolean;
@@ -18,7 +14,11 @@ type FillTableMockarooResult = {
 };
 
 export default async (event: any, ctx: any): Promise<FillTableMockarooResult> => {
-  const { id, count } = event.data;
+  const { id, count, apiKey } = event.data;
+
+  const client = new Mockaroo.Client({
+    apiKey: apiKey || MOCKAROO_API_KEY,
+  });
 
   const { table: tableSchema } = await ctx.api.gqlRequest(TABLE_SCHEMA_QUERY, {
     id,

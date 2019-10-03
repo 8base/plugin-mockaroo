@@ -3,5 +3,5 @@ type FillTableMockarooResult {
 }
 
 extend type Mutation {
-  fillTable(id: ID!, count: Int!): FillTableMockarooResult
+  fillTable(id: ID!, count: Int!, apiKey: String): FillTableMockarooResult
 }
