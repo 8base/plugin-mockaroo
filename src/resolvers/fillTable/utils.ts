@@ -20,12 +20,16 @@ const translateField = (field: FieldSchema) => {
     case FIELD_TYPE.NUMBER: {
       result = R.assoc('type', 'Number', result);
 
-      if (R.hasPath(['fieldTypeAttributes', 'minValue'], field)) {
-        result = R.assoc('min', field.fieldTypeAttributes.minValue, result);
+      const minValue = R.path(['fieldTypeAttributes', 'minValue'], field);
+
+      if (!R.isNil(minValue)) {
+        result = R.assoc('min', minValue, result);
       }
 
-      if (R.hasPath(['fieldTypeAttributes', 'maxValue'], field)) {
-        result = R.assoc('max', field.fieldTypeAttributes.maxValue, result);
+      const maxValue = R.path(['fieldTypeAttributes', 'maxValue'], field);
+
+      if (!R.isNil(maxValue)) {
+        result = R.assoc('max', maxValue, result);
       }
 
       if (R.hasPath(['fieldTypeAttributes', 'precision'], field)) {

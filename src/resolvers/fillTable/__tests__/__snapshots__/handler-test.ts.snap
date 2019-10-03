@@ -1254,8 +1254,6 @@ Array [
       },
       Object {
         "decimals": 4,
-        "max": null,
-        "min": null,
         "name": "numberField",
         "type": "Number",
       },
