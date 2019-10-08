@@ -16,6 +16,12 @@ type FillTableMockarooResult = {
 export default async (event: any, ctx: any): Promise<FillTableMockarooResult> => {
   const { id, count, apiKey } = event.data;
 
+  if (!apiKey && !MOCKAROO_API_KEY) {
+    throw new Error(
+      'Mockaroo api key not found (please set it in MOCKAROO_API_KEY environment variable or pass to mutation via apiKey variable.',
+    );
+  }
+
   const client = new Mockaroo.Client({
     apiKey: apiKey || MOCKAROO_API_KEY,
   });

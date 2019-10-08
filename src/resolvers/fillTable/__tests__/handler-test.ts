@@ -20,7 +20,7 @@ it('Should mock data for the table with passed id according params', async () =>
 
   const result = await handler(
     {
-      data: { id: TABLE_SCHEMA.id, count: 100 },
+      data: { id: TABLE_SCHEMA.id, count: 100, apiKey: 'apiKey' },
     },
     context,
   );
