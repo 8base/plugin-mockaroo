@@ -2,6 +2,6 @@ type FillTableMockarooResult {
   success: Boolean!
 }
 
-extend type Mutation {
+extend type MockarooMutation {
   fillTable(id: ID!, count: Int!, apiKey: String): FillTableMockarooResult
 }
