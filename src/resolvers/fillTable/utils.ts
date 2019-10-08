@@ -55,6 +55,10 @@ const translateField = (field: FieldSchema) => {
 
       break;
     }
+
+    default: {
+      throw new Error(`Plugin doesn't support tables with ${field.fieldType} fields`);
+    }
   }
 
   return result;
